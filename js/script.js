@@ -5,10 +5,12 @@ $('.page-scroll').on('click', function(e){
 	var tujuan = $(this).attr('href');
 	// tangkap elemen tujuan
 	var elemenTujuan = $(tujuan);
+
+
 	// pindahkan scroll
 	$('body').animate({
 		scrollTop: elemenTujuan.offset().top - 50
-	}, 1250, 'swing');
+	}, 1250);
 
 	e.preventDefault();
 });
